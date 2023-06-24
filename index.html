@@ -16,7 +16,7 @@
     </head>
     <body>
         <header
-            style="background-color: cadetblue;position: fixed;width: 100%; z-index: 1;">
+            style="background-color: cadetblue;position: fixed;width: 100%; z-index: 2;">
             <div class="row text-light">
                 <div class="col-md-4 col-9 p-4 pl-5 ">
                     <h2 class="fonts"><span><b>A</b></span>rfan Ashfaque</h2>
@@ -37,23 +37,23 @@
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item active ">
                                     <a class="nav-link text-white"
-                                        href="#home-section">Home</a>
+                                        href="#home-section"  id="screen"  onmouseenter="color('lightgrey')" onmouseleave="color('')">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white"
-                                        href="experience.html">Experiences</a>
+                                        href="experience.html " id="screen-exp"  onmouseenter="color1('lightgrey')" onmouseleave="color1('')">Experiences</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white"
-                                        href="#certi-section">Certifications</a>
+                                        href="#certi-section" id="screen-cer"  onmouseenter="color2('lightgrey')" onmouseleave="color2('')">Certifications</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white"
-                                        href="experience.html">Education</a>
+                                        href="experience.html" id="screen-edu"  onmouseenter="color3('lightgrey')" onmouseleave="color3('')">Education</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white"
-                                        href="#contact-section">Contact
+                                        href="#contact-section" id="screen-con"  onmouseenter="color4('lightgrey')" onmouseleave="color4('')">Contact
                                         me</a>
                                 </li>
 
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section style="background-color: antiquewhite;">
+        <section style="background-color: lightgrey;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -105,86 +105,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class=" p-5 bg-secondary" >
-            <div class="container">
-                <h1 class="text-dark">Proficiency</h1>
-                <div class="row">
-                    <div>
-                        <div class="card-group mx-autod ">
-                            <div class="card img-thumbnail border border-dark">
-                                <a href="www.confido.ae"
-                                    style="text-decoration: none;"
-                                    class="text-light">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVOF1ZkHIoRS3_V2De28v9a1EvuCyf6jemRQ&usqp=CAU"
-                                        class="card-img-top text-align-center"
-                                        style="height: 15em; width: 20em;"
-                                        alt="...">
-                                    <div class="card-body bg-dark text-light">
-                                        <h5 class="card-title">Project
-                                            Engineer/Software Developer</h5>
-                                        <h6 class="card-title">Confido Technical
-                                            Service LLC, Dubai</h6>
-                                        <p class="card-text">This is a wider
-                                            card
-                                            with supporting text below as a
-                                            natural
-                                            lead-in to additional content. This
-                                            content is a little bit longer.</p>
-                                        <a href="#" class="btn btn-success">Read
-                                            More!!!</a>
-                                    </div>
-                                    <div class="card-footer">
-
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card border border-dark">
-                                <img
-                                    src="data:image/png;base64,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"
-                                    class="card-img-top" style="height: 15em;"
-                                    alt="...">
-                                <div class="card-body bg-dark text-light">
-                                    <h5 class="card-title">Senior Software
-                                        Developer, Kochi</h5>
-                                    <h6>IBS Software Service, Kochi</h6>
-
-                                    <p class="card-text">This card has
-                                        supporting text below as a natural
-                                        lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-success ms-auto">Read
-                                        More!!!</a>
-                                </div>
-                                <div class="card-footer">
-
-                                </div>
-                            </div>
-                            <div class="card border border-dark">
-                                <img
-                                    src="data:image/png;base64,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"
-                                    class="card-img-top" style="height: 15em;"
-                                    alt="...">
-                                <div class="card-body bg-dark text-light">
-                                    <h5 class="card-title">Software Developer</h5>
-                                    <h6>IBS Software Service, Kochi</h6>
-                                    <p class="card-text">This is a wider card
-                                        with supporting text below as a natural
-                                        lead-in to additional content. This card
-                                        has even longer content than the first
-                                        to show that equal height action.</p>
-                                    <a href="#" class="btn btn-success md-auto">Read
-                                        More!!!</a>
-                                </div>
-                                <div class="card-footer">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section> -->
         <section style="background-color: lightgrey;">
             <div class="container">
                 <div class="row p-4 mg-auto">
@@ -274,7 +194,7 @@
                 </div>
             </div>
         </section>
-        <section style="background-color: grey;" id="certi-section">
+        <section style="background-color: lightgrey;" id="certi-section">
             <div class="container">
                 <div class="row p-4 mg-auto">
                     <h1 class="text-dark">Certification </h1>
@@ -338,36 +258,36 @@
                 <div class="row">
                     <h1>Contact</h1>
 
-                    <form>
+                    <form class="submit" id="submit">
                         <div class="input-group">
                             <span class="input-group-text">First and last name</span>
                             <input type="text" aria-label="First name"
-                                class="form-control">
+                                class="form-control" id="firstname"name="fname"  minlength="3" style="z-index: 1;">
                             <input type="text" aria-label="Last name"
-                                class="form-control">
+                                class="form-control" id="lastname" name="lname" minlength="3" style="z-index: 1;">
                         </div>
                         <div class="form-floating pt-3">
                             <textarea class="form-control"
                                 placeholder="Leave a comment here"
-                                id="floatingTextarea" minlength="3"></textarea>
-                            <label for="floatingTextarea">Comments</label>
+                                id="floatingTextarea" minlength="3" id="comments"></textarea>
+                            <label for="floatingTextarea" id="comments" >Comments</label>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email
+                            <label for="exampleInputEmail1" class="form-label" >Email
                                 address</label>
-                            <input type="email" class="form-control"
+                            <input type="email" class="form-control" id="emailId"
                                 id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" name="email">
                             <div id="emailHelp" class="form-text">We'll never
                                 share your email with anyone else.</div>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input"
                                 id="exampleCheck1">
-                            <label class="form-check-label disabled"
+                            <label class="form-check-label"
                                 for="exampleCheck1">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-success disabled">Submit</button>
+                        <button type="submit" onclick="storeData()" class="btn btn-success disabled" value="submit">Submit</button>
                     </form>
 
                 </div>
@@ -376,6 +296,10 @@
         <footer class="text-center">
             <p>Copyright <i class="fa-regular fa-copyright"></i></p>
         </footer>
+        <script>
+           
+           
+         </script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -387,4 +311,6 @@
         <script src="https://kit.fontawesome.com/4d2d28d6b4.js"
             crossorigin="anonymous"></script>
     </body>
+    <script src="script.js"></script>
+    <script src="scriptJQ.js"></script>
 </html>
