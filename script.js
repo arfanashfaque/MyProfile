@@ -18,15 +18,15 @@ function storeData(){
 
      var a,b,c;
 
-     a = first;
-     b= last;
+     a = fname;
+     b= lname;
      c = em;
 
-//      if(a== first && b== last && c==em){
-// alert("login successful")
-//      }else{
-//         alert("invalid ")
-//      } 
+     if(a !== "" && b !=="" && c !== "" ){
+    alert("login successful")
+     }else{
+        alert("Please fill Firstname, Lastname and Email ")
+     } 
 }
 
 function color(col){
