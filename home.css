@@ -4,3 +4,15 @@
 .fonts {
   font-family: 'Poppins', sans-serif;
 }
+
+.font-light{
+  color:ghostwhite;
+}
+
+.font-bright{
+  color: aliceblue;
+}
+
+.pad-left{
+  padding-left: 6.5em;
+}
